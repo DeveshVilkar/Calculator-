@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="caalci.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <h1 class="head">Welcome To Calculator</h1>
+        </header>
+        <div class="cal">
+            <div>
+                <input id="display" type="text">
+              
+            </div>
+            <div class="row">
+                <button onclick="clearDisplay()"  class="button escape">AC</button>
+                <button onclick="appendToDisplay('%')" class="button">%</button>
+                <button onclick="appendToDisplay('/')" class="button">/</button>
+                <button onclick="appendToDisplay('*')" class="button orange">*</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToDisplay(7)" class="button lightgrey" >7</button> 
+                <button onclick="appendToDisplay(8)" class="button lightgrey">8</button>
+                <button onclick="appendToDisplay(9)" class="button lightgrey">9</button>
+                <button onclick="appendToDisplay('-')" class="button orange">-</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToDisplay(4)" class="button lightgrey">4</button>
+                <button onclick="appendToDisplay(5)" class="button lightgrey">5</button>
+                <button onclick="appendToDisplay(6)" class="button lightgrey">6</button>
+                <button onclick="appendToDisplay('+')" class="button orange">+</button>
+            </div>
+            <div class="row lastrow">
+                <button onclick="appendToDisplay(1)" class="button lightgrey">1</button>
+                <button onclick="appendToDisplay(2)" class="button lightgrey">2</button>
+                <button onclick="appendToDisplay(3)" class="button lightgrey">3</button>
+                <button onclick="calculate('=')" class="button orange">=</button>
+            </div>
+        </div>
+    <script src="calci.js"></script>
+</body>
+</html>
